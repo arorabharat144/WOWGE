@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Inc">
+      <UniqueIdentifier>{01d57e7c-1af1-4b62-b2df-75b4978dbfb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{eeb265cd-c48b-427f-b5e8-31d32db6e1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Memory">
+      <UniqueIdentifier>{7beb2f15-ed99-4ff9-9575-4ba86d2ffa36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Memory">
+      <UniqueIdentifier>{b23d6b4e-b4d5-47e6-a3f1-ad92c24d0128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Meta">
+      <UniqueIdentifier>{46d4dc0d-beb1-4bc5-8251-96d35164c728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Meta">
+      <UniqueIdentifier>{2f2194f1-ae1f-4bdf-9fd7-a962d07a169a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\Common.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Core.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\DeleteUtil.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Application.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Precompiled.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Timer.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Window.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Debug.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\BlockAllocator.h">
+      <Filter>Inc\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\TypedAllocator.h">
+      <Filter>Inc\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\HandlePool.h">
+      <Filter>Inc\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Handle.h">
+      <Filter>Inc\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MetaType.h">
+      <Filter>Inc\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MetaUtil.h">
+      <Filter>Inc\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\Meta.h">
+      <Filter>Inc\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MetaClass.h">
+      <Filter>Inc\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MetaField.h">
+      <Filter>Inc\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MetaRegistration.h">
+      <Filter>Inc\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MetaRegistry.h">
+      <Filter>Inc\Meta</Filter>
+    </ClInclude>
+    <ClInclude Include="Inc\MetaArray.h">
+      <Filter>Inc\Meta</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Application.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Precompiled.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Timer.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Window.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\BlockAllocator.cpp">
+      <Filter>Src\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MetaType.cpp">
+      <Filter>Src\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MetaField.cpp">
+      <Filter>Src\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MetaClass.cpp">
+      <Filter>Src\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MetaRegistration.cpp">
+      <Filter>Src\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MetaRegistry.cpp">
+      <Filter>Src\Meta</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\MetaArray.cpp">
+      <Filter>Src\Meta</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

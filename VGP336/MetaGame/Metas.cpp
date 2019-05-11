@@ -1,0 +1,14 @@
+#include "Metas.h"
+
+META_CLASS_BEGIN(Car)
+	META_FIELD_BEGIN
+	META_FIELD(position, "Position")
+	META_FIELD(fuel, "Fuel")
+	META_FIELD_END
+META_CLASS_END
+
+META_DERIVED_BEGIN(Ferrari, Car)
+	META_FIELD_BEGIN
+	META_FIELD(turbo, "Turbo")
+	META_FIELD_END
+META_CLASS_END

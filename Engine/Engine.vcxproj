@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CF805932-9B67-47C2-85B8-AAFC49112892}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VSProps\Framework.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VSProps\Framework.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VSProps\Framework.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VSProps\Framework.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\CameraComponent.h" />
+    <ClInclude Include="Inc\ColliderComponent.h" />
+    <ClInclude Include="Inc\Common.h" />
+    <ClInclude Include="Inc\Component.h" />
+    <ClInclude Include="Inc\CubeMeshResource.h" />
+    <ClInclude Include="Inc\Engine.h" />
+    <ClInclude Include="Inc\GameApp.h" />
+    <ClInclude Include="Inc\GameObject.h" />
+    <ClInclude Include="Inc\GameObjectFactory.h" />
+    <ClInclude Include="Inc\MeshComponent.h" />
+    <ClInclude Include="Inc\MetaRegistration.h" />
+    <ClInclude Include="Inc\PixelShaderResource.h" />
+    <ClInclude Include="Inc\PrimitiveMeshResource.h" />
+    <ClInclude Include="Inc\Resource.h" />
+    <ClInclude Include="Inc\ResourceManager.h" />
+    <ClInclude Include="Inc\SphereMeshResource.h" />
+    <ClInclude Include="Inc\State.h" />
+    <ClInclude Include="Inc\StateMachine.h" />
+    <ClInclude Include="Inc\TextureResource.h" />
+    <ClInclude Include="Inc\TransformComponent.h" />
+    <ClInclude Include="Inc\VertexShaderResource.h" />
+    <ClInclude Include="Inc\World.h" />
+    <ClInclude Include="Inc\XMLReader.h" />
+    <ClInclude Include="Src\Precompiled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\CameraComponent.cpp" />
+    <ClCompile Include="Src\ColliderComponent.cpp" />
+    <ClCompile Include="Src\Component.cpp" />
+    <ClCompile Include="Src\CubeMeshResource.cpp" />
+    <ClCompile Include="Src\GameApp.cpp" />
+    <ClCompile Include="Src\GameObject.cpp" />
+    <ClCompile Include="Src\GameObjectFactory.cpp" />
+    <ClCompile Include="Src\MeshComponent.cpp" />
+    <ClCompile Include="Src\MetaRegistration.cpp" />
+    <ClCompile Include="Src\PixelShaderResource.cpp" />
+    <ClCompile Include="Src\Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Src\PrimitiveMeshResource.cpp" />
+    <ClCompile Include="Src\ResourceManager.cpp" />
+    <ClCompile Include="Src\SphereMeshResource.cpp" />
+    <ClCompile Include="Src\TextureResource.cpp" />
+    <ClCompile Include="Src\TransformComponent.cpp" />
+    <ClCompile Include="Src\VertexShaderResource.cpp" />
+    <ClCompile Include="Src\World.cpp" />
+    <ClCompile Include="Src\XMLReader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AI\AI.vcxproj">
+      <Project>{eee9acde-a0ee-4f3a-832c-4c6929aae017}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.vcxproj">
+      <Project>{f17f7ff1-3e83-4cf6-b66c-5320dc6481ed}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\External\DirectXTK\Audio\DirectXTKAudio_Desktop_2017_Win8.vcxproj">
+      <Project>{4f150a30-cecb-49d1-8283-6a3f57438cf5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\External\DirectXTK\DirectXTK_Desktop_2017.vcxproj">
+      <Project>{e0b52ae7-e160-4d32-bf3f-910b785e5a8e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\External\ImGui\ImGui.vcxproj">
+      <Project>{2a54b8f8-11a9-4b5c-b1e9-7d91c3b415f2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.vcxproj">
+      <Project>{a6e86703-63f7-4873-8a3d-49595e34de37}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Input\Input.vcxproj">
+      <Project>{422b1df4-f1a4-4c64-bcdb-3f1baaaaa768}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Math\Math.vcxproj">
+      <Project>{528a854a-8248-4766-8c67-84e888f5dae3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Network\Network.vcxproj">
+      <Project>{251f4762-0099-4bd4-a48e-e084bd9ae516}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Physics\Physics.vcxproj">
+      <Project>{cee51978-c9aa-4261-9c56-757621c9a52b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

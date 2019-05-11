@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GameApp.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="OfficeWorker.cpp">
+      <Filter>OfficeWorker</Filter>
+    </ClCompile>
+    <ClCompile Include="Idle.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Type.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Evacuate.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Sit.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="StandToSit.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Talk.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="SitToStand.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Walk.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Huddle.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldManager.cpp" />
+    <ClCompile Include="SitToType.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeToSit.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Filing.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameApp.h" />
+    <ClInclude Include="OfficeWorker.h">
+      <Filter>OfficeWorker</Filter>
+    </ClInclude>
+    <ClInclude Include="Destination.h" />
+    <ClInclude Include="Idle.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Type.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Evacuate.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Sit.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="StandToSit.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="StateTypes.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Talk.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="SitToStand.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Walk.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Huddle.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldManager.h" />
+    <ClInclude Include="SitToType.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeToSit.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Filing.h">
+      <Filter>States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="OfficeWorker">
+      <UniqueIdentifier>{886e8d05-5085-44ff-a260-f2b7f1318453}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{e1b4a67a-bd09-4688-a3af-b8d761f76080}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

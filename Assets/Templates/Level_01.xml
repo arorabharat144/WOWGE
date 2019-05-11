@@ -1,0 +1,59 @@
+<Level>
+  <Resources>
+    <VertexShader>../../Assets/Shaders/Texturing.fx</VertexShader>
+    <PixelShader>../../Assets/Shaders/Texturing.fx</PixelShader>
+    <Texture>../../Assets/Images/BrickSmallBrown.jpg</Texture>
+    <Texture>../../Assets/Images/Metal.jpg</Texture>
+    <Texture>../../Assets/Images/Sun.jpg</Texture>
+  </Resources>
+  <GameObjects>
+    <GameObject name ="MainCamera">
+      <Path>../../Assets/Templates/MainCamera.xml</Path>
+    </GameObject>
+    <GameObject name ="Cube1">
+      <Path>../../Assets/Templates/Cube.xml</Path>
+      <TransformComponent>
+        <Vector3 name="Position">
+          <Float name="x">-5</Float>
+          <Float name="y">0</Float>
+          <Float name="z">10</Float>
+        </Vector3>
+      </TransformComponent>
+    </GameObject>
+    <GameObject name ="Cube2">
+      <Path>../../Assets/Templates/Cube.xml</Path>
+      <TransformComponent>
+        <Vector3 name="Position">
+          <Float name="x">0</Float>
+          <Float name="y">0</Float>
+          <Float name="z">10</Float>
+        </Vector3>
+      </TransformComponent>
+    </GameObject>
+    <GameObject name ="Cube3">
+      <Path>../../Assets/Templates/Cube.xml</Path>
+      <TransformComponent>
+        <Vector3 name="Position">
+          <Float name="x">5</Float>
+          <Float name="y">0</Float>
+          <Float name="z">10</Float>
+        </Vector3>
+      </TransformComponent>
+    </GameObject>
+    <GameObject name ="Sphere">
+      <Path>../../Assets/Templates/Sphere.xml</Path>
+      <TransformComponent>
+        <Vector3 name="Position">
+          <Float name="x">15</Float>
+          <Float name="y">0</Float>
+          <Float name="z">10</Float>
+        </Vector3>
+      </TransformComponent>
+    </GameObject>
+    <!--
+    <GameObject name ="DirectionalLight">
+      <Path>../../Assets/Templates/DirectionalLight.xml</Path>
+    </GameObject>
+    -->
+  </GameObjects>
+</Level>

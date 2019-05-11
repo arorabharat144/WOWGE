@@ -1,0 +1,25 @@
+﻿<Window x:Class="ModelImporterGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModelImporterGUI"
+        mc:Ignorable="d"
+        Title="ModelConverter" Height="450" Width="700">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="603*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Source" HorizontalAlignment="Left" Margin="53,55,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.5,0.5" Height="29" FontSize="14" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="sourceTextBox" HorizontalAlignment="Left" Height="23" Margin="42.55,61,0,0" VerticalAlignment="Top" Width="396" Grid.Column="1"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="487.55,60,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="BrowseSource_Click"/>
+        <Label Content="Destination" HorizontalAlignment="Left" Margin="39,119,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.5,0.5" Height="29" FontSize="14" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="destinationTextBox" HorizontalAlignment="Left" Height="23" Margin="42.55,125,0,0" VerticalAlignment="Top" Width="396" Grid.Column="1"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="487.55,124,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="BrowseDestination_Click"/>
+        <Button Content="Import" HorizontalAlignment="Left" Margin="224.55,233,0,0" VerticalAlignment="Top" Width="75" Click="Import_Click" Grid.Column="1"/>
+        <ComboBox x:Name="readTypeComboBox" HorizontalAlignment="Left" Margin="42.55,179,0,0" VerticalAlignment="Top" Width="396" Grid.Column="1" SelectionChanged="ReadType_SelectionChanged"/>
+        <Label Content="Read Type" HorizontalAlignment="Left" Margin="39,179,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.5,0.5" Height="29" FontSize="14" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

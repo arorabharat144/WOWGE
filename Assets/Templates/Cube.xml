@@ -1,0 +1,20 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+    </TransformComponent>
+    <MeshComponent>
+      <Mesh name="MeshType">
+        <String>Cube</String>
+      </Mesh>
+      <Texture name="Texture">
+        <String>BrickSmallBrown.jpg</String>
+      </Texture>
+      <VertexShader name="VertexShader">
+        <String>Texturing.fx_V</String>
+      </VertexShader>
+      <PixelShader name="PixelShader">
+        <String>Texturing.fx_P</String>
+      </PixelShader>
+    </MeshComponent>
+  </Components>
+</GameObject>

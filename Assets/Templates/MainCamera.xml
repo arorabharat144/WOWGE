@@ -1,0 +1,32 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+    </TransformComponent>
+    <CameraComponent>
+      <FOV name="FOV">
+        <Float>0.785</Float>
+      </FOV>
+      <NearPlane name="NearPlane">
+        <Float>1</Float>
+      </NearPlane>
+      <FarPlane name="FarPlane">
+        <Float>5000</Float>
+      </FarPlane>
+      <Speed name="Speed">
+        <Float>20</Float>
+      </Speed>
+      <Boost name="Boost">
+        <Float>10</Float>
+      </Boost>
+      <RotationSpeed name="RotationSpeed">
+        <Float>10</Float>
+      </RotationSpeed>
+      <Mode name="Mode">
+        <String>Perspective</String>
+      </Mode>
+      <IsMainCamera name="IsMainCamera">
+        <Bool>1</Bool>
+      </IsMainCamera>
+    </CameraComponent>
+  </Components>
+</GameObject>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="GameApp.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="IronManAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="TraversalState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="MiningState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="FightingState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="SleepingState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameApp.h" />
+    <ClInclude Include="TraversalState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="IronManAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="MiningState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="FightingState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="SleepingState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="States">
+      <UniqueIdentifier>{72eb073c-a68f-44b0-b3b8-170a7bc97aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agent">
+      <UniqueIdentifier>{b0b873ea-168f-45a9-a053-f233dec84c0b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

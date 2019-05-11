@@ -1,0 +1,37 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+      <Vector3 name="Position">
+        <Float name="x">0</Float>
+        <Float name="y">0</Float>
+        <Float name="z">0</Float>
+      </Vector3>
+    </TransformComponent>
+    <DirectionalLightComponent>
+      <Vector4 name="Direction">
+        <Float name="x">0</Float>
+        <Float name="y">-1</Float>
+        <Float name="z">1</Float>
+        <Float name="w">1</Float>
+      </Vector4>
+      <Vector4 name="Ambient">
+        <Float name="x">0</Float>
+        <Float name="y">0</Float>
+        <Float name="z">0</Float>
+        <Float name="w">0</Float>
+      </Vector4>
+      <Vector4 name="Diffuse">
+        <Float name="x">1</Float>
+        <Float name="y">1</Float>
+        <Float name="z">1</Float>
+        <Float name="w">1</Float>
+      </Vector4>
+      <Vector4 name="Specular">
+        <Float name="x">0.5</Float>
+        <Float name="y">0.5</Float>
+        <Float name="z">0.5</Float>
+        <Float name="w">1</Float>
+      </Vector4>
+    </DirectionalLightComponent>
+  </Components>
+</GameObject>

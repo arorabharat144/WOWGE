@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A6E86703-63F7-4873-8A3D-49595E34DE37}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Graphics</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VSProps\Framework.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VSProps\Framework.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VSProps\Framework.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\VSProps\Framework.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\Animation.h" />
+    <ClInclude Include="Inc\AnimationBuilder.h" />
+    <ClInclude Include="Inc\AnimationClip.h" />
+    <ClInclude Include="Inc\AnimationController.h" />
+    <ClInclude Include="Inc\Bone.h" />
+    <ClInclude Include="Inc\BoneAnimation.h" />
+    <ClInclude Include="Inc\Camera.h" />
+    <ClInclude Include="Inc\Common.h" />
+    <ClInclude Include="Inc\ConstantBuffer.h" />
+    <ClInclude Include="Inc\DepthMap.h" />
+    <ClInclude Include="Inc\Graphics.h" />
+    <ClInclude Include="Inc\GraphicsSystem.h" />
+    <ClInclude Include="Inc\GraphicsUtil.h" />
+    <ClInclude Include="Inc\Gui.h" />
+    <ClInclude Include="Inc\HeightMap.h" />
+    <ClInclude Include="Inc\Keyframe.h" />
+    <ClInclude Include="Inc\Light.h" />
+    <ClInclude Include="Inc\Material.h" />
+    <ClInclude Include="Inc\MatrixStack.h" />
+    <ClInclude Include="Inc\Mesh.h" />
+    <ClInclude Include="Inc\MeshBuffer.h" />
+    <ClInclude Include="Inc\MeshBuilder.h" />
+    <ClInclude Include="Inc\MetaRegistration.h" />
+    <ClInclude Include="Inc\Model.h" />
+    <ClInclude Include="Inc\PixelShader.h" />
+    <ClInclude Include="Inc\RasterizerState.h" />
+    <ClInclude Include="Inc\RenderTarget.h" />
+    <ClInclude Include="Inc\Sampler.h" />
+    <ClInclude Include="Inc\SceneStuff\CameraNode.h" />
+    <ClInclude Include="Inc\SceneStuff\ConstantBufferNode.h" />
+    <ClInclude Include="Inc\SceneStuff\DepthMapNode.h" />
+    <ClInclude Include="Inc\SceneStuff\LightNode.h" />
+    <ClInclude Include="Inc\SceneStuff\MaterialNode.h" />
+    <ClInclude Include="Inc\SceneStuff\MeshNode.h" />
+    <ClInclude Include="Inc\SceneStuff\ModelNode.h" />
+    <ClInclude Include="Inc\SceneStuff\RasterizerStateNode.h" />
+    <ClInclude Include="Inc\SceneStuff\RenderTargetNode.h" />
+    <ClInclude Include="Inc\SceneStuff\SamplerNode.h" />
+    <ClInclude Include="Inc\SceneStuff\SceneManager.h" />
+    <ClInclude Include="Inc\SceneStuff\SceneNode.h" />
+    <ClInclude Include="Inc\SceneStuff\ShaderNode.h" />
+    <ClInclude Include="Inc\SceneStuff\TextureNode.h" />
+    <ClInclude Include="Inc\SceneStuff\TransformNode.h" />
+    <ClInclude Include="Inc\SimpleDraw.h" />
+    <ClInclude Include="Inc\SkinnedMesh.h" />
+    <ClInclude Include="Inc\SkinnedMeshBuilder.h" />
+    <ClInclude Include="Inc\Terrain.h" />
+    <ClInclude Include="Inc\Texture.h" />
+    <ClInclude Include="Inc\Transform.h" />
+    <ClInclude Include="Inc\Types.h" />
+    <ClInclude Include="Inc\VertexShader.h" />
+    <ClInclude Include="Inc\VertexTypes.h" />
+    <ClInclude Include="Inc\ShaderStage.h" />
+    <ClInclude Include="Src\Precompiled.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Animation.cpp" />
+    <ClCompile Include="Src\AnimationBuilder.cpp" />
+    <ClCompile Include="Src\AnimationClip.cpp" />
+    <ClCompile Include="Src\AnimationController.cpp" />
+    <ClCompile Include="Src\Bone.cpp" />
+    <ClCompile Include="Src\Camera.cpp" />
+    <ClCompile Include="Src\ConstantBuffer.cpp" />
+    <ClCompile Include="Src\DepthMap.cpp" />
+    <ClCompile Include="Src\GraphicsSystem.cpp" />
+    <ClCompile Include="Src\GraphicsUtil.cpp" />
+    <ClCompile Include="Src\Gui.cpp" />
+    <ClCompile Include="Src\HeightMap.cpp" />
+    <ClCompile Include="Src\MatrixStack.cpp" />
+    <ClCompile Include="Src\Mesh.cpp" />
+    <ClCompile Include="Src\MeshBuffer.cpp" />
+    <ClCompile Include="Src\MeshBuilder.cpp" />
+    <ClCompile Include="Src\MetaRegistration.cpp" />
+    <ClCompile Include="Src\Model.cpp" />
+    <ClCompile Include="Src\PixelShader.cpp" />
+    <ClCompile Include="Src\Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Src\RasterizerState.cpp" />
+    <ClCompile Include="Src\RenderTarget.cpp" />
+    <ClCompile Include="Src\Sampler.cpp" />
+    <ClCompile Include="Src\SceneStuff\CameraNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\ConstantBufferNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\DepthMapNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\LightNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\MaterialNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\MeshNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\ModelNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\RasterizerStateNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\RenderTargetNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\SamplerNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\SceneManager.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\SceneNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\ShaderNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\TextureNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SceneStuff\TransformNode.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Graphics\Src\Precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Src\SimpleDraw.cpp" />
+    <ClCompile Include="Src\SkinnedMesh.cpp" />
+    <ClCompile Include="Src\SkinnedMeshBuilder.cpp" />
+    <ClCompile Include="Src\Terrain.cpp" />
+    <ClCompile Include="Src\Texture.cpp" />
+    <ClCompile Include="Src\Transform.cpp" />
+    <ClCompile Include="Src\VertexShader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.vcxproj">
+      <Project>{f17f7ff1-3e83-4cf6-b66c-5320dc6481ed}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\External\DirectXTK\DirectXTK_Desktop_2017.vcxproj">
+      <Project>{e0b52ae7-e160-4d32-bf3f-910b785e5a8e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Math\Math.vcxproj">
+      <Project>{528a854a-8248-4766-8c67-84e888f5dae3}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

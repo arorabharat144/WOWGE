@@ -1,0 +1,6 @@
+#ifndef INCLUDED_MATH_PRECOMPILED_H
+#define INCLUDED_MATH_PRECOMPILED_H
+
+#include "Common.h"
+
+#endif // #ifndef INCLUDED_MATH_PRECOMPILED_H

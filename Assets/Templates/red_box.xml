@@ -1,0 +1,29 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+      <Vector3 name="Position">
+        <Float name="x">5</Float>
+        <Float name="y">0</Float>
+        <Float name="z">0</Float>
+      </Vector3>
+    </TransformComponent>
+    <ColliderComponent>
+      <Vector3 name="Center">
+        <Float name="x">0</Float>
+        <Float name="y">1</Float>
+        <Float name="z">0</Float>
+      </Vector3>
+      <Vector3 name="Extend">
+        <Float name="x">0.5</Float>
+        <Float name="y">1</Float>
+        <Float name="z">0.5</Float>
+      </Vector3>
+      <Color name="Color">
+        <Float name="r">1</Float>
+        <Float name="g">0</Float>
+        <Float name="b">0</Float>
+        <Float name="a">1</Float>
+      </Color>
+    </ColliderComponent>
+  </Components>
+</GameObject>

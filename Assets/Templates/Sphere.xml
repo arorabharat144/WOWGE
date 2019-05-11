@@ -1,0 +1,20 @@
+<GameObject>
+  <Components>
+    <TransformComponent>
+    </TransformComponent>
+    <MeshComponent>
+      <Mesh name="MeshType">
+        <String>Sphere</String>
+      </Mesh>
+      <Texture name="Texture">
+        <String>Sun.jpg</String>
+      </Texture>
+      <VertexShader name="VertexShader">
+        <String>Texturing.fx_V</String>
+      </VertexShader>
+      <PixelShader name="PixelShader">
+        <String>Texturing.fx_P</String>
+      </PixelShader>
+    </MeshComponent>
+  </Components>
+</GameObject>
